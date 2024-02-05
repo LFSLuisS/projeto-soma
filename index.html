@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Programa - Soma </title>
+</head>
+
+<body>
+    <h1> soma </h1>
+    <label> valor 1 </label> <input id="valor1" type="Number" />
+    </br>
+    </br>
+    <label> valor 2 </label> <input id="valor2" type="number" />
+    <button onclick="somar()"> Enter </button>
+
+    <h2 id="resultado"> Resultado </h2>
+
+
+    <script>
+        function somar() {
+            num1 = document.getElementById("valor1").value;
+            console.log(num1);
+            num2 = document.getElementById("valor2").value;
+            console.log(num2);
+
+            soma = parseInt(num1) + parseInt(num2)
+            document.getElementById("resultado").innerHTML = soma;
+        }
+        </script>
+
+        <style>
+            body{background-color: #f8f4bb}
+            #resultado{
+                color:rgb(210, 36, 30);
+            }
+            h1{
+                color:rgb(52, 123, 255)   
+            }
+            input{border-radius: 50px;
+            color: rgb(242, 241, 243);
+            background-color: rgb(196, 152, 255);
+            }
+        </style>
+
+</body>
+
+</html>
